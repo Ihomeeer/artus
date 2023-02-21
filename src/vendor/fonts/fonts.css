@@ -1,13 +1,5 @@
 @font-face {
-  font-family: "JetBrains Mono";
-  font-style:  normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("./JetBrainsMono-Italic.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "TTNorms Mono";
+  font-family: "TTNorms Medium";
   font-style:  normal;
   font-weight: 500;
   font-display: swap;
@@ -15,9 +7,9 @@
 }
 
 @font-face {
-  font-family: "TTNorms Mono";
+  font-family: "TTNorms Regular";
   font-style:  normal;
   font-weight: 900;
   font-display: swap;
-  src: url("./TTNorms-Bold.woff2") format("woff2");
+  src: url("./TTNorms-Regular.woff2") format("woff2");
 }

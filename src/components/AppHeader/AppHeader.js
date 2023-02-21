@@ -1,5 +1,7 @@
+import React from 'react';
 import styles from './AppHeader.module.css';
 import logoPath from '../../images/logo.png';
+import NavBar from '../NavBar/NavBar';
 
 function AppHeader() {
   return (
@@ -8,9 +10,7 @@ function AppHeader() {
         <a className={styles.logo} hre="true" href="https://www.google.com/">
           <img className={styles.logo} src={logoPath} alt="лого проекта" />
         </a>
-        <nav className={styles.navigationContainer}>
-
-        </nav>
+        <NavBar />
       </div>
     </div>
   )

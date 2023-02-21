@@ -19,6 +19,9 @@
 }
 
 .logo {
+  height: 50px;
+  width: auto;
   margin-left: 20px;
   margin-right: auto;
+  padding: 0;
 }
