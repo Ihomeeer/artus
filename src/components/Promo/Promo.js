@@ -2,7 +2,8 @@ import styles from './Promo.module.css';
 import React from 'react';
 import PromoIcon from '../PromoIcon/PromoIcon';
 import firstIconPath from '../../images/icon1.svg';
-
+import secondIconPath from '../../images/icon2.svg';
+import thirdIconPath from '../../images/icon3.svg';
 
 function Promo() {
   return (
@@ -20,7 +21,21 @@ function Promo() {
         <li>
           <PromoIcon
             imgSrc={firstIconPath}
-            text="тест"
+            text="Оценка нормативной урожайности и интегрального показателя плодородия на вашем участке"
+          />
+        </li>
+
+        <li>
+          <PromoIcon
+            imgSrc={thirdIconPath}
+            text="Проведение обследований в случае необходимости  максимально детализированного отчета"
+          />
+        </li>
+
+        <li>
+          <PromoIcon
+            imgSrc={secondIconPath}
+            text="Доступ к данным уникальной базы обследований земель сельхозназначения за 70 и более лет"
           />
         </li>
       </ul>

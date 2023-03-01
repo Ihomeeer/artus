@@ -1,0 +1,17 @@
+.section {
+  width: 100%;
+  margin: auto;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+.about {
+  width: 1120px;
+  height: fit-content;
+  margin: 50px auto;
+  font-size: 48px;
+}

@@ -10,7 +10,6 @@
     url(../../images/PromoBcg.jpg);
   background-size: cover;
   position: relative;
-  border: 2px solid blueviolet;
   color: white;
 }
 
@@ -29,9 +28,14 @@
 .iconsContainer {
   width: 900px;
   height: 200px;
+  padding: 0;
   margin: 40px auto 20px;
   list-style: none;
-  border: 1px solid orangered;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 1px solid orangered; */
 }
 
 .checkButton {
@@ -43,4 +47,10 @@
   color: white;
   font-size: 20px;
   margin: 20px auto 40px;
+  cursor: pointer;
+  transition: background-color 0.4s;
+}
+
+.checkButton:hover {
+  background-color: rgb(228, 77, 74);
 }
