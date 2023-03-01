@@ -3,6 +3,7 @@ import styles from './App.module.css';
 import AppHeader from '../AppHeader/AppHeader';
 import Promo from '../Promo/Promo';
 import InfoSection from '../InfoSection/InfoSection';
+import HowToSection from '../HowToSection/HowToSection';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <AppHeader />
       <Promo />
       <InfoSection />
+      <HowToSection />
     </div>
   );
 }
