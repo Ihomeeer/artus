@@ -1,8 +1,8 @@
 import styles from './AboutSection.module.css';
 
-function AboutSection({ textAbout }) {
+function AboutSection({ textAbout, aboutRef }) {
   return (
-    <section className={styles.section}>
+    <section className={styles.section} ref={aboutRef}>
       <h2 className={styles.header}>
         Об организации
       </h2>

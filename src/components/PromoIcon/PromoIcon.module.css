@@ -1,11 +1,9 @@
 .container {
   width: 300px;
   min-height: 200px;
-  /* border: 1px solid greenyellow; */
 }
 
 .image {
   width: 110px;
   height: 110px;
-  /* border: 1px solid violet; */
 }

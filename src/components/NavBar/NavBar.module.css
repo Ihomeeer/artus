@@ -16,7 +16,6 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  /* border: 2px solid greenyellow; */
 }
 
 .navItem {
@@ -29,4 +28,15 @@
 
 .navItem:hover {
   opacity: .7;
+}
+
+.button {
+  background-color: transparent;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
 }

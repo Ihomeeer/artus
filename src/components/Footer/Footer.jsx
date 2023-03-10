@@ -2,9 +2,9 @@ import styles from './Footer.module.css';
 import cx from 'classnames';
 import logoPath from '../../images/logo-reverse.png';
 
-function Footer({ phone, adress, link }) {
+function Footer({ phone, adress, link, contactsRef }) {
   return (
-    <section className={styles.section}>
+    <section className={styles.section} ref={contactsRef}>
       <div className={styles.contentContainer}>
         <a className={styles.logo} hre="true" href="https://www.google.com/">
           <img className={styles.logo} src={logoPath} alt="лого проекта" />
