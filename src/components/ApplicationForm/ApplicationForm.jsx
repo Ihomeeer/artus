@@ -2,6 +2,9 @@ import styles from './ApplicationForm.module.css';
 import React from 'react';
 
 function ApplicationForm({ title, buttonTitle }) {
+
+
+
   return (
     <form className={styles.formContainer}>
       <h3 className={styles.title}>
@@ -29,8 +32,6 @@ function ApplicationForm({ title, buttonTitle }) {
       </div>
 
       <button className={styles.button}>{buttonTitle}</button>
-
-      <p className={styles.sign}>И мы с вами свяжемся </p>
     </form>
   )
 }

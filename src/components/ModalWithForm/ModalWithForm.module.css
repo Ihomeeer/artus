@@ -1,0 +1,38 @@
+.modalContainer {
+  width: 50%;
+  height: fit-content;
+  padding: 40px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  border-radius: 5px;
+  min-height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.reversedContainer {
+  flex-direction: column-reverse;
+}
+
+.regularContainer {
+  flex-direction: column;
+}
+
+.text {
+  margin-top: 20px;
+  width: 75%;
+  font-size: 20px;
+  text-align: justify;
+  font-family: "TTNorms Regular";
+  color: #8f8e8e;
+}
+
+.textCenter {
+  text-align: center;
+}

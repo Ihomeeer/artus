@@ -7,7 +7,16 @@ import HowToSection from '../HowToSection/HowToSection';
 import AboutSection from '../AboutSection/AboutSection';
 import Footer from '../Footer/Footer';
 import ApplicationForm from '../ApplicationForm/ApplicationForm';
-import { aboutText, footerLink, footerPhone, footerAdress } from '../../vendor/data';
+import ModalWithForm from '../ModalWithForm/ModalWithForm';
+import {
+  aboutText,
+  footerLink,
+  footerPhone,
+  footerAdress,
+  headerModalText,
+  firstModalText,
+  secondModalText,
+} from '../../vendor/data';
 
 function App() {
 
@@ -17,21 +26,21 @@ function App() {
   // Секция "Контакты"
   const contactsRef = React.createRef();
 
-    //Обработка нажатий на вкладки
-    const handleScrollSection = (ref) => {
-      // прыжок к нужному рефу
-      if (ref && ref.current) {
-        ref.current.scrollIntoView({ behavior: "smooth" });
-      }
+  //Обработка нажатий на вкладки
+  const handleScrollSection = (ref) => {
+    // прыжок к нужному рефу
+    if (ref && ref.current) {
+      ref.current.scrollIntoView({ behavior: "smooth" });
     }
+  }
 
 
   return (
     <div className={styles.App}>
       <AppHeader
-      aboutRef={aboutRef}
-      contactsRef={contactsRef}
-      handleScroll={handleScrollSection}
+        aboutRef={aboutRef}
+        contactsRef={contactsRef}
+        handleScroll={handleScrollSection}
       />
       <Promo />
       <InfoSection />
@@ -46,10 +55,40 @@ function App() {
         link={footerLink}
         contactsRef={contactsRef}
       />
-      <ApplicationForm
-       title="Заявка"
-       buttonTitle="Отправить заявку"
-      />
+      <ModalWithForm
+        reversed={true}
+        modalText={headerModalText}
+      >
+        <ApplicationForm
+          title="Заявка"
+          buttonTitle="Отправить заявку"
+        />
+      </ModalWithForm>
+
+      <ModalWithForm
+        color="rgb(122, 50, 46)"
+        textColor="#fff"
+        reversed={false}
+        modalText={firstModalText}
+      >
+        <ApplicationForm
+          title="Заявка"
+          buttonTitle="Отправить заявку"
+        />
+      </ModalWithForm>
+
+      <ModalWithForm
+        color="rgb(24, 148, 109)"
+        textColor="white"
+        reversed={false}
+        modalText={secondModalText}
+      >
+        <ApplicationForm
+          title="Заявка"
+          buttonTitle="Отправить заявку"
+        />
+      </ModalWithForm>
+
     </div>
   );
 }
